@@ -1,0 +1,16 @@
+cd C:\Users\AlexF\Desktop\minifct_espidf
+
+# Создаём окружение в папке проекта
+py -m venv .pio_venv
+
+# Активируем
+.pio_venv\Scripts\Activate.ps1
+
+# Устанавливаем в это окружение
+pip install platformio
+
+# Работаем как обычно
+pio run --environment esp32dev
+
+# Когда закончили — деактивируем
+deactivate

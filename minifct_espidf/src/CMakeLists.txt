@@ -1,0 +1,9 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "protocol.cpp"
+        "hal.cpp"
+        "test_engine.cpp"
+    INCLUDE_DIRS
+        "../include"
+)

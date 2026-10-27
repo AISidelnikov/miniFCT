@@ -1,0 +1,8 @@
+py -m pip install platformio --target "C:/<Пусть где должен лежать>"
+
+Сборка: & "C:\Users\AlexF\Desktop\minifct_espidf\Python\pythoncore-3.15-64\Scripts\pio.exe" run --environment esp32dev
+Прошивка: & "C:\Users\AlexF\Desktop\minifct_espidf\Python\pythoncore-3.15-64\Scripts\pio.exe" run --environment esp32dev -t upload --upload-port COM<номер>
+Мониторинг: & "C:\Users\AlexF\Desktop\minifct_espidf\Python\pythoncore-3.15-64\Scripts\pio.exe" device monitor --port COM<номер> --baud 115200
+Список портов: & "C:\Users\AlexF\Desktop\minifct_espidf\Python\pythoncore-3.15-64\Scripts\pio.exe" device list
+Очистить: & "C:\Users\AlexF\Desktop\minifct_espidf\Python\pythoncore-3.15-64\Scripts\pio.exe" run --environment esp32dev -t clean
+Все сразу: & "C:\Users\AlexF\Desktop\minifct_espidf\Python\pythoncore-3.15-64\Scripts\pio.exe" run --environment esp32dev -t upload monitor --upload-port COM3 --baud 115200
